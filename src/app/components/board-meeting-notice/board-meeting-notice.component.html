@@ -1,0 +1,16 @@
+<div class="container my-5">
+  <h2 class="text-center">BOARD MEETING <span class="color--theme">NOTICE</span></h2>
+  <div class="row mt-4">
+    <div class="col-md-4 mb-3" *ngFor="let meeting of meetings">
+      <div class="card shadow-sm">
+        <div class="card-body d-flex align-items-center">
+          <i class="fas fa-calendar-day fa-2x mr-3"></i> 
+          <div>
+            <h6 class="card-title mb-1">{{ meeting.title }}</h6>
+            <p class="card-text text-muted mb-0">{{ meeting.date }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

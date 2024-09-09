@@ -1,0 +1,35 @@
+.videopopup-box {
+  position: relative;
+  width: 100%;
+}
+
+.videopopup-box img {
+  width: 100%;
+  z-index: 1;
+}
+
+.videopopup-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.mission-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.mission-section h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mission-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}

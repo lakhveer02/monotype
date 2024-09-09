@@ -1,0 +1,79 @@
+.container-fluid {
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #151728;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    color: #f7f7f7;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .card h2 {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #151728;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 1200px) {
+    .dashboard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dashboard {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+    background-color: #1e2030;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    color: #a0a2b5;
+  }
+  
+  .card .amount {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #fff;
+  }
+  

@@ -1,0 +1,97 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">
+    Share Reconciliation <span class="color--theme">Report</span>
+  </h2>
+  <form #reportForm="ngForm">
+    <div class="form-group">
+      <label for="reportDate">Report Date</label>
+      <input
+        type="date"
+        class="form-control shadow-none"
+        id="reportDate"
+        required
+        ngModel
+        name="reportDate"
+      />
+    </div>
+    <div class="form-group">
+      <label for="companyName">Company Name</label>
+      <input
+        class="form-control shadow-none"
+        type="text"
+        placeholder="Enter Company Name"
+        id="companyName"
+        required
+        ngModel
+        name="companyName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="totalShares">Total Shares</label>
+      <input
+        type="number"
+        class="form-control shadow-none"
+        id="totalShares"
+        placeholder="Enter total Shares"
+        required
+        ngModel
+        name="totalShares"
+      />
+    </div>
+    <div class="form-group">
+      <label for="reconciledShares">Reconciled Shares</label>
+      <input
+        type="number"
+        class="form-control shadow-none"
+        id="reconciledShares"
+        placeholder="Enter reconciled shares"
+        required
+        ngModel
+        name="reconciledShares"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="fileUpload">Upload Report File</label>
+      <input
+        type="file"
+        (change)="onFileSelected($event)"
+        class="form-control shadow-none"
+        id="fileUpload"
+      />
+    </div>
+
+    <button type="button" (click)="onSubmit()" class="btn btn--color mt-3">
+      Upload Report
+    </button>
+  </form>
+
+  <div class="mt-4">
+    <h3>Reconciliation Details</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Shareholder</th>
+          <th>Shares Held</th>
+          <th>Reconciled</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (shareholder of items; track $index) {
+          <tr >
+            <td>{{ shareholder.name }}</td>
+            <td>{{ shareholder.shares }}</td>
+            <td>{{ shareholder.reconciled }}</td>
+            <td>{{ shareholder.image}}</td>
+          </tr>
+        }
+        <tr>
+          <th>Veer</th>
+          <th>1000</th>
+          <th>10000</th>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>

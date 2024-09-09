@@ -1,0 +1,28 @@
+<div class="board-committee-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">FINANCIAL <span class="color--theme">REPORTS</span></h2>
+    <div class="dashboard">
+      <div class="card cash-in-bank">
+        <h3>Cash in bank</h3>
+        <p class="amount">$ 616.5K</p>
+        <highcharts-chart [Highcharts]="Highcharts" [options]="cashInBankChartOptions"
+          style="width: 100%; height: 200px; display: block;">
+        </highcharts-chart>
+      </div>
+      <div class="card burn">
+        <h3>Cash</h3>
+        <p class="amount">$ 63.9K</p>
+        <highcharts-chart [Highcharts]="Highcharts" [options]="burnChartOptions"
+          style="width: 100%; height: 200px; display: block;">
+        </highcharts-chart>
+      </div>
+      <div class="card total">
+        <h3>Total Amount</h3>
+        <p class="amount">$ 90.8M</p>
+        <highcharts-chart [Highcharts]="Highcharts" [options]="totalAmountChartOptions"
+          style="width: 100%; height: 200px; display: block;">
+        </highcharts-chart>
+      </div>
+    </div>
+  </div>
+</div>

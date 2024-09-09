@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">
+        Related Party <span class="color--theme">Transaction</span>
+    </h2>
+
+    <form #transactionForm="ngForm">
+        <div class="form-group">
+            <label for="transactionDate">Transaction Date</label>
+            <input type="date" class="form-control" id="transactionDate" required ngModel name="transactionDate" />
+        </div>
+        <div class="form-group">
+            <label for="partyName">Party Name</label>
+            <input type="text" class="form-control" placeholder="Entry Party Name" id="partyName" required ngModel name="partyName" />
+        </div>
+        <div class="form-group">
+            <label for="transactionAmount">Transaction Amount</label>
+            <input type="number" class="form-control" placeholder="Enter Transaction Amount " required ngModel name="transactionAmount" />
+        </div>
+        <div class="form-group">
+            <label for="transactionType">Transaction Type</label>
+            <select class="form-control" name="transactionType" id="transactionType" required ngModel>
+                <option value="sale">Sale</option>
+                <option value="purchase">Purchase</option>
+                <option value="service">Service</option>
+                <option value="loan">Loan</option>
+            </select>
+        </div>
+        <button (click)="onSubmit()" class="btn btn--color mt-3">Submit Transaction</button>
+    </form>
+    <div class="mt-4">
+        <h3>Transaction <span class="color--theme">Details</span></h3>
+        <table class="tbale table-borderd">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Party Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

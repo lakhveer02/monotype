@@ -1,0 +1,29 @@
+.coming-soon {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .countdown-item {
+    text-align: center;
+  }
+  
+  .countdown-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  

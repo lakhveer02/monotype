@@ -1,0 +1,46 @@
+.board-committee-section {
+    background-color: #f8f9fa;
+  }
+  
+  .committee-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .committee-card .committee-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    font-size: 0.875rem;
+  }
+  
+  .table th {
+    font-weight: 700;
+  }
+  
+  .table td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .bg-dark {
+    background-color: #333 !important;
+  }
+  
+  .bg-warning {
+    background-color: #c2a25d !important;
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+  
+  .text-dark {
+    color: #333 !important;
+  }
+  

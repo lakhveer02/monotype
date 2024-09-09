@@ -1,0 +1,52 @@
+<div class="container">
+    <h2 class="text-center mb-4">Shareholder <span class="color--theme">Pattern</span></h2>
+    <div class="form-group mt-4">
+        <label for="reportDate">Report Date</label>
+        <input type="date" class="form-control shadow-none" id="reportDate" />
+    </div>
+    <div class="form-group mt-4">
+        <label for="shareholderName"> Shareholder Name</label>
+        <input type="text" class="form-control shadow-none" id="shareholderName" placeholder="Enter Shareholder Name" />
+    </div>
+    <div class="form-group mt-4">
+        <label for="numberOfShares">Number Of Shares</label>
+        <input type="number" class="form-control shadow-none" id="numberOfShares" placeholder="Enter Number Of Shares">
+    </div>
+    <button class="btn btn--color mt-4" (click)="addShareholder()">Add Shareholder</button>
+    <div class="mt-5">
+        <h3>Shareholder <span class="color--theme">Details</span></h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Shareholder Name</th>
+                    <th>Number Of Shares</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (shareholder of shareholders; track $index) {
+                    <tr>
+                        <th>{{shareholder.date | date:'dd-mm-yyyy'}}</th>
+                        <th>{{shareholder.name}}</th>
+                        <th>{{shareholder.shares}}</th>
+                    </tr>
+                }
+                <tr>
+                    <th>19-08-2024</th>
+                    <th>John</th>
+                    <th>122344</th>
+                </tr>
+                <tr>
+                    <th>18-07-2024</th>
+                    <th>Deo</th>
+                    <th>223322</th>
+                </tr>
+                <tr>
+                    <th>12-08-2024</th>
+                    <th>Lakhveer</th>
+                    <th>200002</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

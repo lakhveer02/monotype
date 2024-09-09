@@ -1,0 +1,49 @@
+.portfolio-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio-card{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-card:hover{
+    transform: translateY(-5px);
+  }
+  
+  .portfolio-card img{
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-content{
+    background-color: #fff;
+    padding: 15px;
+  }
+
+   .portfolio-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#333
+  }
+
+   .portfolio-description{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+   }
+  
+ 

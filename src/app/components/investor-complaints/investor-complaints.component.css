@@ -1,0 +1,19 @@
+.container{
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid;
+	margin-bottom: 20px;
+}
+.card{
+    border:none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-header{
+    background-color: #333;
+    color: #fff;
+}
+.card-body{
+    background-color: #ffffff;
+    border:none;
+}
