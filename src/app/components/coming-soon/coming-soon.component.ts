@@ -15,7 +15,7 @@ export class ComingSoonComponent {
     seconds: 0,
   };
 
-  private targetDate: Date = new Date('2024-09-24T00:00:00');
+  private targetDate: Date = new Date('2025-12-24T00:00:00');
   private intervalId: number | undefined;
 
   ngOnInit(): void {
